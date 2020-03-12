@@ -1,0 +1,99 @@
+#This is a comment
+#There is no difference between .yaml & .yml
+
+code:
+  # "code" object has all this values.
+  #We have to put same indentation between all. That's all are a part of object
+  name: "YAML"        #string format double quotes
+  nick: 'yaml'        #single quote also acceptable
+  age: 5   (we can be use this in float operation) age: !!float 23    # 23.0
+  number: 2.5 (we can be use this in string operation)  !!str 3.5   #"3.5"
+  year_session: 2020
+  eval: e+230
+
+#multiple format to write key-value pair in yaml.
+#all this objects are example of list items.
+key:
+- value1
+- value2
+key: ["value1", "value2"]
+       or
+key:
+- key1: "value1"
+  name: "tom"
+- {key1: "value1", key2: "value2"}
+-
+ name: "kosh"
+ age: 23
+
+#to print the line in single lines, we use (>).
+ description: >
+      This is so amazing word to write
+      There is not summary in docker
+      all the lines has to be come in single line
+command: |
+    #to print as it as in command line we use pipe.
+    Coder
+    coder@noissue
+    Learning yaml file
+
+name: &name "python"
+
+id: *name
+
+
+ ---------------------------------------------------
+#spring.database.initial-size=1
+#spring.database.max-active=10
+#spring.database.min-active=5
+#spring.database.total-data=10
+
+spring:
+   database:
+        initial-size: 1
+        max-active: 10
+        min-active: 5
+        total-data: 10
+
+somelist1:
+- value1: one
+- value2: two
+
+somelist2:
+   - value1: one
+   - value2: two
+
+#List of maps
+anothermaplist:
+  - keyvalue: 1
+    value: 'my_val'
+  - keyvalue: 2
+    value: 'my_val'
+
+#Key Value pair
+color: white
+card: visa
+place: code
+
+#Array/Lists
+#Ordered collection
+Fruits:
+- Orange
+- Mango
+- Grapes
+
+Vegetables:
+- Carrots
+- Tomatoes
+- Potatoes
+
+#Dictionary/Map
+#Dictionary - Unordered collection
+Banana:
+    Calories: 100
+    Fat: 0.5 g
+    Carbs: 30 g
+Grapes:
+    Calories: 75
+    Fat: 0.8 g
+    Carbs: 40 g
