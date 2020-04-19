@@ -1,0 +1,14 @@
+---
+# in list format
+- code
+- state
+- pre
+- condition
+
+# key:value pair
+- github:
+    name: tej-singh-rana
+    job:  none
+    skill: unique
+
+
